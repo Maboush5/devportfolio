@@ -9,8 +9,10 @@
     Description: This file contains all the scripts associated with the single-page
     portfolio website.
 */
+// slideshow animations
 
 (function($) {
+
 
     // Show current year
     $("#current-year").text(new Date().getFullYear());
@@ -42,7 +44,7 @@
     $('#to-top').click(function() {
         $('html, body').animate({
             scrollTop: 0
-        }, 500);
+        }, 200);
     });
 
     // Scroll to first element
@@ -50,7 +52,7 @@
         var scrollDistance = $('#lead').next().offset().top;
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, 500);
+        }, 200);
     });
 
     // Create timeline
